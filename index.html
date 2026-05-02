@@ -2,74 +2,118 @@
 <html>
 <head>
   <title>Ketan Kumar Portfolio</title>
+
   <style>
     body {
-      font-family: Arial;
-      background: #0f172a;
-      color: white;
       margin: 0;
-      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 48px;
+      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    h2 {
       color: #38bdf8;
     }
 
     section {
-      margin-bottom: 40px;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
 
     .card {
       background: #1e293b;
-      padding: 15px;
-      margin-top: 10px;
-      border-radius: 10px;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: gray;
     }
   </style>
 </head>
 
 <body>
 
+<header>
   <h1>Ketan Kumar</h1>
   <p>Software Developer | Power Platform Specialist</p>
+  <p>
+    <a href="https://github.com/ketan0786">GitHub</a> |
+    <a href="https://linkedin.com">LinkedIn</a>
+  </p>
+</header>
 
-  <section>
-    <h2>About Me</h2>
+<section>
+  <h2>About Me</h2>
+  <p>
+    Computer Science student at University of Ottawa with experience building enterprise
+    applications for the Government of Canada using Power Platform.
+  </p>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Department of National Defence</h3>
     <p>
-      Computer Science student at University of Ottawa building enterprise applications
-      for Government of Canada using Power Platform.
+      Built scalable Power Apps handling 5K+ records, automated workflows,
+      and improved enterprise efficiency.
     </p>
-  </section>
+  </div>
 
-  <section>
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Department of National Defence</h3>
-      <p>Built scalable Power Apps handling 5K+ records and automated workflows.</p>
-    </div>
-  </section>
+</section>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Change Tracker App</h3>
-      <p>Replaced IBM system → saved $300K annually</p>
-    </div>
+<section>
+  <h2>Projects</h2>
 
-    <div class="card">
-      <h3>CLLS System</h3>
-      <p>Lessons learned platform with workflows and search</p>
-    </div>
-  </section>
+  <div class="card">
+    <h3>Change Tracker App</h3>
+    <p>Replaced IBM system and saved $300K annually.</p>
+  </div>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: kkuma074@uottawa.ca</p>
-    <p>
-      <a href="https://github.com/ketan0786" style="color:#38bdf8;">GitHub</a>
-    </p>
-  </section>
+  <div class="card">
+    <h3>CLLS System</h3>
+    <p>Centralized lessons learned platform with workflows and search.</p>
+  </div>
+
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: kkuma074@uottawa.ca</p>
+</section>
+
+<footer>
+  © 2026 Ketan Kumar
+</footer>
 
 </body>
 </html>
