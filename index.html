@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,6 +49,7 @@
       max-width: 900px;
       margin: auto;
       padding: 40px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
     }
 
     .card {
@@ -57,6 +57,17 @@
       padding: 20px;
       border-radius: 12px;
       margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .card.highlight {
+      border: 2px solid #38bdf8;
+      box-shadow: 0 0 15px rgba(56,189,248,0.4);
     }
 
     ul {
@@ -92,6 +103,7 @@
   <a href="#education">Education</a>
   <a href="#experience">Experience</a>
   <a href="#projects">Projects</a>
+  <a href="#achievements">Achievements</a>
   <a href="#skills">Skills</a>
 </nav>
 
@@ -106,9 +118,22 @@
     <a href="https://github.com/ketan0786" target="_blank">GitHub</a>
   </p>
 
-  <!-- RESUME BUTTON -->
   <a href="Ketan-Kumar.pdf" download class="btn">Download Resume</a>
 </header>
+
+<!-- FEATURED -->
+<section>
+  <h2>🚀 Featured Work</h2>
+
+  <div class="card highlight">
+    <h3>Change Tracker (CDRL & RCR)</h3>
+    <p>
+      Enterprise change management system with lifecycle tracking, transmittal logs,
+      automation workflows, and reporting capabilities.
+    </p>
+    <p><b>Impact:</b> Saved ~$300K annually | Innovation Award</p>
+  </div>
+</section>
 
 <!-- EDUCATION -->
 <section id="education">
@@ -129,194 +154,74 @@
   </div>
 
   <div class="card">
-    <h3>Central Tool Room (Post Grade 10)</h3>
-    <p>Ludhiana, India</p>
-    <p><i>4-year Diploma in Mechanical Engineering (Tool & Die)</i></p>
-    <p>July 2013 – June 2017</p>
+    <h3>Central Tool Room</h3>
+    <p>India</p>
+    <p><i>Diploma in Mechanical Engineering (Tool & Die)</i></p>
+    <p>2013 – 2017</p>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
-  <h2>Experience</h2>
+  <h2>Professional Experience</h2>
 
-<div class="card">
-  <h3>Digital Solutions Developer</h3>
-  <p><b>Department of National Defence (DPMSO) – Government of Canada</b></p>
-  <p>Ottawa, ON | Jan 2026 – Present</p>
-
-  <ul>
-    <li>Enhanced the Change Tracker system (CDRL & RCR) by scaling record capacity from delegation limits (~2K) to 5K+ records using optimized data architecture</li>
-
-    <li>Redesigned and standardized role-based access (Admin 1, Admin 2, and Users) to improve governance, security, and workflow control</li>
-
-    <li>Maintained and extended lifecycle tracking and transmittal logging to ensure accurate change detection and full auditability</li>
-
-    <li>Contributed to the development of the Student Talent Hub, a centralized platform for DND employers to discover and connect with student talent</li>
-
-    <li>Collaborated within a cross-functional team to enhance system usability, performance, and adoption across stakeholders</li>
-  </ul>
-</div>
-
-<div class="card">
-  <h3>Digital Solutions Developer | Project Management Support</h3>
-  <p><b>Department of National Defence (CMLU – Cormorant Mid-Life Upgrade) – Government of Canada</b></p>
-  <p>Ottawa, ON | Aug 2025 – Dec 2025</p>
-
-  <ul>
-    <li>Led the transition of the CMLU (Cormorant Mid-Life Upgrade – Search and Rescue Helicopter) team to the Change Tracker platform, improving change management processes</li>
-
-    <li>Successfully migrated legacy data from IBM Rational Change to the new system using ETL processes, ensuring data integrity and continuity</li>
-
-    <li>Developed the Checklist App to enforce structured data entry and ensure compliance before submitting records into the Change Tracker system</li>
-
-    <li>Implemented role-based access control to ensure appropriate permissions for users across different teams</li>
-
-    <li>Built the CLLS (Lessons Learned System) to capture, categorize, and analyze project-level insights for continuous improvement</li>
-
-    <li>Improved workflow standardization and data accuracy across project teams</li>
-  </ul>
-</div>
-
+  <!-- CURRENT -->
   <div class="card">
-  <h3>Digital Solutions Developer | Project Management Support</h3>
-  <p><b>Department of National Defence (DPMSO) – Government of Canada</b></p>
-  <p>Ottawa, ON | Jan 2025 – Aug 2025</p>
-
-  <ul>
-    <li>Designed and developed the Change Tracker system (CDRL & RCR), an enterprise change management platform to manage and track change requests across their lifecycle</li>
-
-    <li>Integrated Power BI dashboards to provide real-time analytics and insights for monitoring change requests and project risks</li>
-
-    <li>Implemented lifecycle-based tracking to detect and record changes at each stage, ensuring traceability and auditability</li>
-
-    <li>Developed transmittal logging functionality to capture user actions, comments, and stage transitions</li>
-
-    <li>Enabled data export to Excel to support reporting and stakeholder analysis</li>
-
-    <li>Created user guides, setup documentation, and video tutorials to support onboarding and adoption across teams</li>
-
-    <li>Delivered end-to-end solution including development, documentation, and training, improving usability and adoption</li>
-  </ul>
-    </div>
-
-  <div class="card">
-    <h3>CNC Programmer</h3>
-    <p><b>A&C Tool Inc.</b></p>
-    <p>Bowmanville, ON | Oct 2019 – Sep 2022</p>
+    <h3>Digital Solutions Developer</h3>
+    <p><b>DND (DPMSO)</b> | Jan 2026 – Present</p>
 
     <ul>
-      <li>Programmed CNC machines using Fusion 360</li>
-      <li>Reduced rework by 20% and improved efficiency by 15%</li>
+      <li>Scaled Change Tracker system from ~2K to 5K+ records</li>
+      <li>Redefined Admin 1, Admin 2, and User roles for governance</li>
+      <li>Maintained lifecycle tracking and transmittal logging</li>
+      <li>Contributed to Student Talent Hub platform</li>
     </ul>
   </div>
 
+  <!-- CMLU -->
   <div class="card">
-    <h3>Field Technician – Bike Share Transit (Part-Time)</h3>
-    <p><b>Shift Transit</b></p>
-    <p>Toronto, ON | Mar 2021 – Sep 2021</p>
+    <h3>Digital Solutions Developer</h3>
+    <p><b>DND (CMLU – SAR Helicopter Upgrade)</b> | Aug 2025 – Dec 2025</p>
 
     <ul>
-      <li>Updated 100+ work orders daily</li>
-      <li>Reduced downtime by 30%</li>
-      <li>Maintained operational records</li>
+      <li>Migrated IBM Rational Change data using ETL</li>
+      <li>Developed Checklist App for compliance workflows</li>
+      <li>Built CLLS system for capturing lessons learned</li>
     </ul>
   </div>
+
+  <!-- EARLIER -->
+  <div class="card">
+    <h3>Digital Solutions Developer</h3>
+    <p><b>DND (DPMSO)</b> | Jan 2025 – Aug 2025</p>
+
+    <ul>
+      <li>Developed Change Tracker (CDRL & RCR)</li>
+      <li>Integrated Power BI dashboards for analytics</li>
+      <li>Implemented lifecycle tracking and logging</li>
+      <li>Created documentation, setup guides, and training videos</li>
+    </ul>
+  </div>
+
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-  <h2>Projects</h2>
+  <h2>Key Projects</h2>
 
-  <!-- FEATURED PROJECT -->
   <div class="card">
-    <h3>🎓 Student Talent Hub (DND) ⭐</h3>
-
-    <p><b>Overview:</b> Developed a centralized platform for DND employers to discover, evaluate, and connect with student talent across departments.</p>
-
-    <p><b>Key Features:</b></p>
-    <ul>
-      <li>Built a searchable student database for current and past student employees</li>
-      <li>Enabled filtering by skills, experience, and project involvement</li>
-      <li>Designed self-service profile management for students</li>
-      <li>Implemented role-based access with SharePoint backend</li>
-    </ul>
-
-    <p><b>Impact:</b></p>
-    <ul>
-      <li>Improved visibility of student talent across DND</li>
-      <li>Streamlined hiring and internal recruitment processes</li>
-      <li>Reduced dependency on manual referrals</li>
-    </ul>
-
-    <p><b>Tech:</b> Power Apps, Power Automate, SharePoint</p>
+    <h3>🎓 Student Talent Hub</h3>
+    <p>Platform for DND employers to discover and hire student talent</p>
   </div>
 
   <div class="card">
-    <h3>🚀 Change Tracker App (CDRL & RCR)</h3>
-
-    <p><b>Overview:</b> Replaced legacy IBM Rational Change system with enterprise Power Apps solution.</p>
-
-    <p><b>Impact:</b></p>
-    <ul>
-      <li>Saved ~$300,000 annually</li>
-      <li>Improved tracking, visibility, and reporting efficiency</li>
-      <li>Received Innovation Award from Chief of Staff (Materiel)</li>
-    </ul>
-
-    <p><b>Tech:</b> Power Apps, Power Automate, Power BI</p>
-  </div>
-
-  <div class="card">
-    <h3>📊 CMLU Lessons Learnt System (CLLS)</h3>
-
-    <p><b>Overview:</b> Built centralized platform to capture, categorize, and analyze project insights.</p>
-
-    <ul>
-      <li>Implemented structured submission and validation workflows</li>
-      <li>Developed advanced search functionality</li>
-    </ul>
-
-    <p><b>Tech:</b> Power Apps, Power Automate</p>
+    <h3>📊 CLLS System</h3>
+    <p>Centralized lessons learned platform</p>
   </div>
 
   <div class="card">
     <h3>✅ Checklist App</h3>
-
-    <p><b>Overview:</b> Process-driven checklist application to enforce compliance and data accuracy.</p>
-
-    <ul>
-      <li>Designed toggle-based workflow controls</li>
-      <li>Integrated SharePoint backend and automated approvals</li>
-    </ul>
-
-    <p><b>Tech:</b> Power Apps, Power Automate</p>
-  </div>
-
-  <div class="card">
-    <h3>💻 Cycling Event Application</h3>
-
-    <p><b>Overview:</b> Full-stack web application for event registration and management.</p>
-
-    <ul>
-      <li>Supported 100+ concurrent users</li>
-      <li>Designed scalable architecture using Java and SQL</li>
-    </ul>
-
-    <p><b>Tech:</b> Java, SQL</p>
-  </div>
-
-  <div class="card">
-    <h3>🏨 Hotel Reservation System</h3>
-
-    <p><b>Overview:</b> Full-stack booking system with optimized relational database.</p>
-
-    <ul>
-      <li>Handled 500+ bookings efficiently</li>
-      <li>Designed schema and improved performance</li>
-    </ul>
-
-    <p><b>Tech:</b> MySQL, JavaScript, React</p>
+    <p>Workflow compliance system</p>
   </div>
 
 </section>
@@ -325,21 +230,20 @@
 <section id="achievements">
   <h2>Achievements</h2>
 
-  <div class="card">
-    <h3>🏆 Innovation Award – Chief of Staff (Materiel)</h3>
+  <div class="card highlight">
+    <h3>🏆 Innovation Award</h3>
 
     <p>
-      Received the Innovation Award as part of the Change Tracker development team for delivering a cost-effective in-house solution.
+      Recognized by Chief of Staff (Materiel) for delivering a cost-effective solution.
     </p>
 
     <ul>
-      <li>Replaced IBM Rational Change with a Power Platform solution</li>
-      <li>Saved approximately $300,000 annually in licensing costs</li>
-      <li>Improved efficiency, visibility, and change management processes across the organization</li>
+      <li>Saved ~$300,000 annually</li>
+      <li>Replaced IBM Rational Change</li>
     </ul>
   </div>
 
-</section>  
+</section>
 
 <!-- SKILLS -->
 <section id="skills">
@@ -347,10 +251,8 @@
 
   <div class="card">
     <p><b>Power Platform:</b> Power Apps, Power Automate, Power BI</p>
-    <p><b>Languages:</b> Java, Python, Scheme, Prolog</p>
+    <p><b>Languages:</b> Java, Python, SQL</p>
     <p><b>Frameworks:</b> React, Flask</p>
-    <p><b>Tools:</b> Git, AutoCAD, Excel</p>
-    <p><b>Databases:</b> MySQL, PostgreSQL</p>
   </div>
 </section>
 
