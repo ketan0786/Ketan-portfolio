@@ -4,9 +4,7 @@
   <title>Ketan Kumar Portfolio</title>
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -15,12 +13,10 @@
       color: white;
     }
 
-    /* NAVBAR */
     nav {
       position: sticky;
       top: 0;
-      background: rgba(0,0,0,0.6);
-      backdrop-filter: blur(10px);
+      background: rgba(0,0,0,0.7);
       padding: 15px;
       text-align: center;
     }
@@ -30,10 +26,6 @@
       color: #38bdf8;
       text-decoration: none;
       font-weight: bold;
-    }
-
-    nav a:hover {
-      color: white;
     }
 
     header {
@@ -64,12 +56,6 @@
       padding: 20px;
       border-radius: 12px;
       margin-top: 20px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     }
 
     .tags span {
@@ -79,17 +65,6 @@
       margin: 5px;
       border-radius: 8px;
       font-size: 12px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
-      border-radius: 8px;
-      background: #38bdf8;
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
     }
 
     footer {
@@ -102,15 +77,14 @@
 
 <body>
 
-<!-- NAVBAR -->
 <nav>
-  <a href="#about">About</a>
+  <a href="#education">Education</a>
   <a href="#experience">Experience</a>
   <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<!-- HERO -->
 <header>
   <h1>Ketan Kumar</h1>
   <p>Software Developer | Power Platform Specialist</p>
@@ -120,13 +94,27 @@
   </p>
 </header>
 
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    Computer Science student at University of Ottawa building enterprise-level applications
-    for the Government of Canada using Power Platform.
-  </p>
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="card">
+    <h3>University of Ottawa</h3>
+    <p>Bachelor of Science in Computer Science, Minor in Management</p>
+    <p>Sept 2022 – Aug 2026 | Ottawa, ON</p>
+  </div>
+
+  <div class="card">
+    <h3>Centennial College</h3>
+    <p>Diploma in Mechanical Engineering Technician - Design</p>
+    <p>Jan 2018 – Apr 2019 | Scarborough, ON</p>
+  </div>
+
+  <div class="card">
+    <h3>Central Tool Room</h3>
+    <p>4-year Diploma in Mechanical Engineering (Tool & Die)</p>
+    <p>July 2013 – June 2017 | India</p>
+  </div>
 </section>
 
 <!-- EXPERIENCE -->
@@ -134,18 +122,32 @@
   <h2>Experience</h2>
 
   <div class="card">
-    <h3>Department of National Defence</h3>
-    <p>
-      Built scalable Power Apps handling 5K+ records, automated workflows,
-      and improved enterprise efficiency.
-    </p>
+    <h3>Software Developer & Project Management Support</h3>
+    <p><b>DND (DPMSO)</b> | Jan 2026 – Present</p>
+    <ul>
+      <li>Scaled Power Apps beyond delegation limits (2K → 5K+ records)</li>
+      <li>Developing Student Information Management System</li>
+      <li>Integrated SharePoint, workflows, and automation</li>
+    </ul>
+  </div>
 
-    <div class="tags">
-      <span>Power Apps</span>
-      <span>Power Automate</span>
-      <span>SharePoint</span>
-      <span>Power BI</span>
-    </div>
+  <div class="card">
+    <h3>Software Developer & Project Support</h3>
+    <p><b>DND (CMLU)</b> | Aug 2025 – Dec 2025</p>
+    <ul>
+      <li>Led migration from IBM system</li>
+      <li>Built enterprise Power Apps solutions</li>
+      <li>Developed Power BI dashboards</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>CNC Programmer</h3>
+    <p><b>A&C Tool Inc.</b> | Oct 2019 – Sep 2022</p>
+    <ul>
+      <li>Programmed CNC machines using Fusion 360</li>
+      <li>Reduced rework by 20% and improved efficiency</li>
+    </ul>
   </div>
 
 </section>
@@ -155,30 +157,37 @@
   <h2>Projects</h2>
 
   <div class="card">
-    <h3>🚀 Change Tracker App</h3>
-
-    <p><b>Impact:</b> Saved $300K annually</p>
-
-    <div class="tags">
-      <span>Power Apps</span>
-      <span>Automation</span>
-      <span>Enterprise</span>
-    </div>
-
-    <a class="btn" href="#">View Details</a>
+    <h3>Change Tracker App</h3>
+    <p>Saved ~$300K annually by replacing legacy systems</p>
   </div>
 
   <div class="card">
-    <h3>📊 CLLS System</h3>
-
-    <p>Centralized lessons learned platform with workflows and search.</p>
-
-    <div class="tags">
-      <span>Power Platform</span>
-      <span>Workflows</span>
-    </div>
+    <h3>CLLS System</h3>
+    <p>Centralized lessons learned system with workflows</p>
   </div>
 
+  <div class="card">
+    <h3>Cycling Event App</h3>
+    <p>Full-stack app supporting 100+ users</p>
+  </div>
+
+  <div class="card">
+    <h3>Hotel Reservation System</h3>
+    <p>React + MySQL system handling 500+ bookings</p>
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Technical Skills</h2>
+
+  <div class="card">
+    <p><b>Power Platform:</b> Power Apps, Power Automate, Power BI</p>
+    <p><b>Languages:</b> Java, Python, SQL</p>
+    <p><b>Frameworks:</b> React, Flask</p>
+    <p><b>Tools:</b> Git, AutoCAD, Excel</p>
+  </div>
 </section>
 
 <!-- CONTACT -->
