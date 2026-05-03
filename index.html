@@ -184,6 +184,18 @@ body::after {
   z-index: -1;
 }
 
+    .phone {
+  color: #e5e7eb !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Mobile override fix */
+a[href^="tel"] {
+  color: #e5e7eb !important;
+  text-decoration: none;
+}
+
   </style>
 </head>
 
@@ -209,7 +221,7 @@ body::after {
 
       <p>
         Ottawa, ON |
-        <span class="phone">647-807-7866</span> |
+        <a href="tel:6478077866" class="phone">647-807-7866</a>|
         <a href="mailto:kkuma074@uottawa.ca">kkuma074@uottawa.ca</a> |
         <a href="https://www.linkedin.com/in/ketan-kumar1" target="_blank">LinkedIn</a> |
         <a href="https://github.com/ketan0786" target="_blank">GitHub</a>
