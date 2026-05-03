@@ -46,21 +46,11 @@
       margin: 0 5px;
     }
 
-    header a[href*="linkedin"] {
-      color: #0A66C2;
-    }
+    header a[href*="linkedin"] { color: #0A66C2; }
+    header a[href*="github"] { color: #e5e7eb; }
+    header a[href^="mailto"] { color: #38bdf8; }
 
-    header a[href*="github"] {
-      color: #e5e7eb;
-    }
-
-    header a[href^="mailto"] {
-      color: #38bdf8;
-    }
-
-    header a:hover {
-      opacity: 0.7;
-    }
+    header a:hover { opacity: 0.7; }
 
     h1 {
       font-size: 50px;
@@ -139,6 +129,18 @@
       opacity: 0.85;
     }
 
+    /* ANIMATION */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
   </style>
 </head>
 
@@ -152,7 +154,7 @@
   <a href="#skills">Skills</a>
 </nav>
 
-<header>
+<header class="fade-in">
   <h1>Ketan Kumar</h1>
   <p>Software Developer | Power Platform Specialist</p>
 
@@ -167,22 +169,16 @@
   <a href="Ketan-Kumar.pdf" download class="btn">Download Resume</a>
 </header>
 
-<!-- FEATURED -->
-<section>
+<section class="fade-in">
   <h2>🚀 Featured Work</h2>
-
   <div class="card highlight">
     <h3>Change Tracker (CDRL & RCR)</h3>
-    <p>
-      Enterprise change management system with lifecycle tracking, transmittal logs,
-      automation workflows, and reporting capabilities.
-    </p>
+    <p>Enterprise change management system with lifecycle tracking, logging, automation, and reporting.</p>
     <p><b>Impact:</b> Saved ~$300K annually | Innovation Award</p>
   </div>
 </section>
 
-<!-- EDUCATION -->
-<section id="education">
+<section id="education" class="fade-in">
   <h2>Education</h2>
 
   <div class="card">
@@ -191,131 +187,66 @@
       <span class="gpa">GPA: 8.2 / 10</span>
     </div>
     <p>Ottawa, ON</p>
-    <p><i>Bachelor of Science in Computer Science, Minor in Management</i></p>
-    <p>Sept 2022 – Aug 2026</p>
+    <p><i>Bachelor of Science in Computer Science</i></p>
   </div>
-
-  <div class="card">
-    <div class="edu-row">
-      <h3>Centennial College</h3>
-      <span class="gpa">GPA: 4.0 / 4.5</span>
-    </div>
-    <p>Scarborough, ON</p>
-    <p><i>Diploma in Mechanical Engineering Technician – Design</i></p>
-    <p>Jan 2018 – Apr 2019</p>
-  </div>
-
-  <div class="card">
-    <div class="edu-row">
-      <h3>Central Tool Room</h3>
-      <span class="gpa">Grade: 80%</span>
-    </div>
-    <p>Ludhiana, India</p>
-    <p><i>Diploma in Mechanical Engineering (Tool & Die)</i></p>
-    <p>2013 – 2017</p>
-  </div>
-
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
+<section id="experience" class="fade-in">
   <h2>Professional Experience</h2>
 
   <div class="card">
     <h3>Digital Solutions Developer</h3>
-    <p><b>DND (DPMSO)</b> | Jan 2026 – Present</p>
+    <p><b>DND (DPMSO)</b></p>
     <ul>
-      <li>Scaled Change Tracker system from ~2K to 5K+ records</li>
-      <li>Redefined Admin 1, Admin 2, and User roles for governance</li>
-      <li>Maintained lifecycle tracking and transmittal logging</li>
-      <li>Contributed to Student Talent Hub platform</li>
+      <li>Scaled Change Tracker system to 5K+ records</li>
+      <li>Improved lifecycle tracking and logging</li>
     </ul>
   </div>
-
-  <div class="card">
-    <h3>Digital Solutions Developer</h3>
-    <p><b>DND (CMLU – SAR Helicopter Upgrade)</b> | Aug 2025 – Dec 2025</p>
-    <ul>
-      <li>Migrated IBM Rational Change data using ETL</li>
-      <li>Developed Checklist App for compliance workflows</li>
-      <li>Built CLLS system for capturing lessons learned</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Digital Solutions Developer</h3>
-    <p><b>DND (DPMSO)</b> | Jan 2025 – Aug 2025</p>
-    <ul>
-      <li>Developed Change Tracker (CDRL & RCR)</li>
-      <li>Integrated Power BI dashboards for analytics</li>
-      <li>Implemented lifecycle tracking and logging</li>
-      <li>Created documentation, setup guides, and training videos</li>
-    </ul>
-  </div>
-
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Key Projects</h2>
-
+<section id="projects" class="fade-in">
+  <h2>Projects</h2>
   <div class="card">
-    <h3>🎓 Student Talent Hub</h3>
-    <p>Platform for DND employers to discover and connect with student talent</p>
+    <h3>Student Talent Hub</h3>
+    <p>Platform for student hiring</p>
   </div>
-
-  <div class="card">
-    <h3>📊 Power BI Risk & Change Analytics</h3>
-    <p>Real-time dashboards for monitoring change requests and risk registers</p>
-  </div>
-
-  <div class="card">
-    <h3>📊 CLLS System</h3>
-    <p>Centralized lessons learned platform</p>
-  </div>
-
-  <div class="card">
-    <h3>✅ Checklist App</h3>
-    <p>Workflow compliance system</p>
-  </div>
-
-  <div class="card">
-    <h3>🏨 Hotel Reservation System</h3>
-    <p>Full-stack booking system</p>
-  </div>
-
-  <div class="card">
-    <h3>💻 Cycling Event Application</h3>
-    <p>Full-stack app supporting 100+ users</p>
-  </div>
-
 </section>
 
-<!-- ACHIEVEMENTS -->
-<section id="achievements">
+<section id="achievements" class="fade-in">
   <h2>Achievements</h2>
-
   <div class="card highlight">
-    <h3>🏆 Innovation Award – Chief of Staff (Materiel)</h3>
-    <p>Saved ~$300,000 annually by replacing IBM Rational Change</p>
+    <h3>🏆 Innovation Award</h3>
+    <p>Saved ~$300K annually</p>
   </div>
-
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Technical Skills</h2>
-
+<section id="skills" class="fade-in">
+  <h2>Skills</h2>
   <div class="card">
-    <p><b>Power Platform:</b> Power Apps, Power Automate, Power BI</p>
-    <p><b>Languages:</b> Java, Python, SQL, HTML</p>
-    <p><b>Frameworks:</b> React, Flask</p>
+    <p>Power Apps, Java, Python</p>
   </div>
 </section>
 
-<footer>
+<footer class="fade-in">
   © 2026 Ketan Kumar
 </footer>
+
+<!-- JS FOR ANIMATION -->
+<script>
+  const elements = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  elements.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
