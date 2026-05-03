@@ -138,7 +138,27 @@
       font-size: 14px;
       opacity: 0.85;
     }
+/* BITMOJI HEADER */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
 
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(56,189,248,0.6);
+  transition: 0.3s;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
 
 
   </style>
@@ -155,19 +175,27 @@
 </nav>
 
 
- <header>
-  <h1>Ketan Kumar</h1>
-  <p>Software Developer | Power Platform Specialist</p>
+<header>
+  <div class="header-container">
 
-  <p>
-    Ottawa, ON |
-    647-807-7866 |
-    <a href="mailto:kkuma074@uottawa.ca">kkuma074@uottawa.ca</a> |
-    <a href="https://www.linkedin.com/in/ketan-kumar1" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/ketan0786" target="_blank">GitHub</a>
-  </p>
+    <img src="Bitmoji-Wave.png" alt="Ketan Avatar" class="avatar">
 
-  <a href="Ketan-Kumar.pdf" download class="btn">Download Resume</a>
+    <div>
+      <h1>Ketan Kumar</h1>
+      <p>Software Developer | Power Platform Specialist</p>
+
+      <p>
+        Ottawa, ON |
+        647-807-7866 |
+        <a href="mailto:kkuma074@uottawa.ca">kkuma074@uottawa.ca</a> |
+        <a href="https://www.linkedin.com/in/ketan-kumar1" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/ketan0786" target="_blank">GitHub</a>
+      </p>
+
+      <a href="Ketan-Kumar.pdf" download class="btn">Download Resume</a>
+    </div>
+
+  </div>
 </header>
 
 <!-- FEATURED -->
